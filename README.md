@@ -44,14 +44,24 @@ cmake --build build
 * [x] Textures
 * [x] Coordinate Systems
 * [x] Camera
-* [ ] Colors
-* [ ] Basic Lighting
+* [x] Colors
+* [x] Basic Lighting
 * [ ] Materials
 * [ ] Lighting Maps
 * [ ] Light Casters
 * [ ] Multiple Lights
 * [ ] Model Loading
 * [ ] Advanced OpenGL
+
+## Phong Lighting
+
+### Screenshot 1
+
+![Phong Lighting 1](examples/Phonglighting1.png)
+
+### Screenshot 2
+
+![Phong Lighting 2](examples/Phonglighting2.png)
 
 ## Built With
 
