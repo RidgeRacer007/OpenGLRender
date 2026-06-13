@@ -9,6 +9,14 @@ OpenGL renderer project built while following LearnOpenGL.
 ```bash
 sudo pacman -S cmake gcc glfw glm
 ```
+### Windows
+
+Install:
+
+- Visual Studio 2022 (Desktop Development with C++)
+- CMake
+- GLFW
+- GLM
 
 ## Build
 
