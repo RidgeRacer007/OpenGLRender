@@ -7,6 +7,14 @@
 static std::string loadShader(const char* path)
 {
     std::ifstream file(path);
+
+    if (!file.is_open())
+    {
+        std::cerr << "FAILED TO OPEN SHADER: "
+                  << path << std::endl;
+        return "";
+    }
+
     std::stringstream buffer;
     buffer << file.rdbuf();
     return buffer.str();
@@ -83,7 +91,7 @@ void shaderProgram::setBool(const std::string &name, bool value) const
 
 void shaderProgram::setInt(const std::string &name, int value) const
 {
-    glUniform1f(glGetUniformLocation(program, name.c_str()), (float)value);
+    glUniform1i(glGetUniformLocation(program, name.c_str()), (float)value);
 }
 
 /*From shader.vert
